@@ -1,0 +1,175 @@
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef4f9;
+    color: #333;
+}
+
+body > h2 {
+    margin: 0;
+    padding: 30px 20px;
+    background-color: #075985;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 5px solid #38bdf8;
+}
+
+form {
+    width: 90%;
+    max-width: 850px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin: 0 0 25px;
+    padding: 20px 25px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}
+
+legend {
+    padding: 7px 14px;
+    background-color: #0284c7;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+fieldset p {
+    margin: 18px 0;
+}
+
+label {
+    display: inline-block;
+    width: 230px;
+    font-weight: bold;
+    color: #334155;
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: calc(100% - 235px);
+    padding: 11px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #0284c7;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+output {
+    display: inline-block;
+    width: calc(100% - 235px);
+    padding: 12px 15px;
+    border-radius: 6px;
+    background-color: #e0f2fe;
+    color: #075985;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+fieldset:nth-of-type(3) {
+    border-color: #7dd3fc;
+}
+
+fieldset:nth-of-type(3) legend {
+    background-color: #0369a1;
+}
+
+fieldset:nth-of-type(4) {
+    background-color: #f0f9ff;
+    border-color: #bae6fd;
+}
+
+fieldset:nth-of-type(4) p {
+    color: #475569;
+    font-size: 14px;
+}
+
+keygen {
+    width: calc(100% - 235px);
+}
+
+form > p:last-child {
+    text-align: center;
+    margin: 30px 0 5px;
+}
+
+button[type="submit"] {
+    padding: 13px 35px;
+    border: none;
+    border-radius: 7px;
+    background-color: #0284c7;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0369a1;
+}
+
+@media (max-width: 700px) {
+    body > h2 {
+        font-size: 24px;
+        padding: 25px 15px;
+    }
+
+    form {
+        width: 94%;
+        padding: 25px 15px;
+        margin: 20px auto;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    output,
+    keygen {
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
